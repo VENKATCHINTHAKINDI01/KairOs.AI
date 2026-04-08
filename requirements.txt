@@ -1,0 +1,29 @@
+# KairosAI — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Groq via OpenAI-compatible SDK (free LLM)
+openai>=1.30.0
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# Web API framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+
+# WebSocket support
+websockets>=12.0
+
+# Rich terminal output
+rich>=13.7.0
+
+# Data validation
+pydantic>=2.7.0
+
+# Testing
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0
+
+# Type checking
+mypy>=1.10.0

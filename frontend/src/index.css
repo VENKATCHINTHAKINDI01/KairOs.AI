@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --kairos-orange: #e8552a;
+    --kairos-green:  #00d97e;
+    --kairos-amber:  #f5a623;
+    --kairos-red:    #ff3b3b;
+    --night:         #0a0a0f;
+    --surface:       #13151f;
+    --surface-2:     #1a1d2e;
+    --border:        rgba(255,255,255,0.07);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background-color: var(--night);
+    color: #e2e4f0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar       { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+}
+
+@layer components {
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  .card-2 {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+
+  .verdict-proceed   { color: var(--kairos-green); }
+  .verdict-pause     { color: var(--kairos-amber); }
+  .verdict-rollback  { color: var(--kairos-red);   }
+
+  .badge-critical { background: rgba(232,85,42,0.15);  color: #ff6b4a; border: 1px solid rgba(232,85,42,0.3); }
+  .badge-high     { background: rgba(245,166,35,0.15); color: #f5a623; border: 1px solid rgba(245,166,35,0.3); }
+  .badge-medium   { background: rgba(99,179,237,0.15); color: #63b3ed; border: 1px solid rgba(99,179,237,0.3); }
+  .badge-low      { background: rgba(160,174,192,0.1); color: #a0aec0; border: 1px solid rgba(160,174,192,0.2); }
+
+  .glow-orange { box-shadow: 0 0 30px rgba(232,85,42,0.15); }
+  .glow-green  { box-shadow: 0 0 30px rgba(0,217,126,0.15); }
+  .glow-red    { box-shadow: 0 0 30px rgba(255,59,59,0.15);  }
+}
