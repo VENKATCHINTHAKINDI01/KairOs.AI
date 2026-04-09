@@ -774,7 +774,8 @@ class SREEscalationAgent(BaseAgent):
 | `rollback_impact_predictor` | Predicts user experience during and after rollback (expected recovery timeline, data risks) | Risk Agent, PM Agent |
 
 ---
-##### A major Improvement I wanna add to this project in future ( confidence score updation for each agent based on the kind of feedback we received (tech issues, marketing issues, etc) based on issues we get the particular agent who is more capable of the issues naalysis/solve can get more decision weightage intially 
+### A major Improvement I wanna add to this project in future ( confidence score updation for each agent based on the kind of feedback we received (tech issues, marketing issues, etc) based on issues we get the particular agent who is more capable of the issues naalysis/solve can get more decision weightage intially helps in better solving of the issue
+
 
 __
 ### Roadmap Summary
